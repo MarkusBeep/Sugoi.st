@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUGOI Store — Estuches, Accesorios y Más | Made in Cuenca</title>
+  <meta name="description" content="Diseños personalizados de camisetas, estuches y hoodies. Hecho en Cuenca para gente bacana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor trail -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Background grid + blobs -->
+  <div class="bg-layer">
+    <div class="grid-bg"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo" aria-label="Sugoi Store">
+      <svg viewBox="0 0 24 24" class="bolt-icon" aria-hidden="true">
+        <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+      </svg>
+      <span>SUGOI<span class="dot">.</span>st</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#inicio">Inicio</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#acerca">Acerca</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#catalogo" class="btn btn--sm">
+      Comprar
+      <svg viewBox="0 0 24 24" class="bolt-icon" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+    </a>
+    <button class="nav__burger" id="navBurger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg-text" aria-hidden="true">
+      <span>SUGOI</span>
+      <span class="outline">SUGOI</span>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="pulse-dot"></span>
+        New Season · 2026
+      </div>
+
+      <h1 class="hero__title">
+        <span class="word">Diseños</span>
+        <span class="word">que</span>
+        <span class="word highlight">
+          golpean
+          <svg viewBox="0 0 24 24" class="bolt-decoration" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        </span>
+        <span class="word">como</span>
+        <span class="word">un rayo.</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Camisetas, estuches y hoodies hechos a tu medida. <br />
+        Para gente bacana, made in Cuenca.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#catalogo" class="btn btn--primary">
+          Ver Catálogo
+          <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        </a>
+        <a href="#categorias" class="btn btn--ghost">Explorar</a>
+      </div>
+
+      <div class="hero__stats">
+        <div><strong>+500</strong><span>Diseños únicos</span></div>
+        <div><strong>3</strong><span>Líneas premium</span></div>
+        <div><strong>100%</strong><span>Personalizado</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__circle">
+        <svg viewBox="0 0 200 200" class="rotating-text" aria-hidden="true">
+          <defs>
+            <path id="circlePath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+          </defs>
+          <text font-family="Bungee" font-size="18" fill="currentColor">
+            <textPath href="#circlePath">SUGOI STORE · ESTUCHES · ACCESORIOS · Y MÁS · </textPath>
+          </text>
+        </svg>
+        <svg viewBox="0 0 24 24" class="hero__bolt-big" aria-hidden="true">
+          <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+        </svg>
+      </div>
+    </div>
+
+    <a href="#categorias" class="scroll-down" aria-label="Desplázate">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>MADE IN CUENCA</span><i class="bolt-sep">⚡</i>
+      <span>PARA GENTE BACANA</span><i class="bolt-sep">⚡</i>
+      <span>DISEÑOS PERSONALIZADOS</span><i class="bolt-sep">⚡</i>
+      <span>SUGOI STORE</span><i class="bolt-sep">⚡</i>
+      <span>NEW SEASON 2026</span><i class="bolt-sep">⚡</i>
+      <span>MADE IN CUENCA</span><i class="bolt-sep">⚡</i>
+      <span>PARA GENTE BACANA</span><i class="bolt-sep">⚡</i>
+      <span>DISEÑOS PERSONALIZADOS</span><i class="bolt-sep">⚡</i>
+      <span>SUGOI STORE</span><i class="bolt-sep">⚡</i>
+      <span>NEW SEASON 2026</span><i class="bolt-sep">⚡</i>
+    </div>
+  </div>
+
+  <!-- CATEGORÍAS -->
+  <section class="categories" id="categorias">
+    <div class="section-head reveal">
+      <span class="eyebrow">⚡ Nuestras líneas</span>
+      <h2>Tres formas de <em>brillar</em>.</h2>
+      <p>Elige tu canvas. Nosotros le damos voltaje.</p>
+    </div>
+
+    <div class="cat-grid">
+      <article class="cat-card reveal" data-cat="camisetas">
+        <div class="cat-card__num">01</div>
+        <div class="cat-card__visual">
+          <svg viewBox="0 0 100 100" class="cat-icon" aria-hidden="true">
+            <path d="M25 20 L40 15 L50 25 L60 15 L75 20 L80 35 L70 40 L70 85 L30 85 L30 40 L20 35 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Camisetas</h3>
+        <p>Algodón premium. Estampados de alta resolución que aguantan mil lavadas.</p>
+        <div class="cat-card__footer">
+          <span>Desde $15</span>
+          <svg viewBox="0 0 24 24" class="arrow"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="cat-card__bolt"></div>
+      </article>
+
+      <article class="cat-card reveal" data-cat="estuches">
+        <div class="cat-card__num">02</div>
+        <div class="cat-card__visual">
+          <svg viewBox="0 0 100 100" class="cat-icon" aria-hidden="true">
+            <rect x="30" y="10" width="40" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="4"/>
+            <circle cx="50" cy="80" r="3" fill="currentColor"/>
+            <path d="M45 20 L42 35 L48 35 L46 50 L55 30 L49 30 L52 20 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Estuches</h3>
+        <p>Protección con actitud. Diseños únicos para que tu celu hable por ti.</p>
+        <div class="cat-card__footer">
+          <span>Desde $10</span>
+          <svg viewBox="0 0 24 24" class="arrow"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="cat-card__bolt"></div>
+      </article>
+
+      <article class="cat-card reveal" data-cat="hoodies">
+        <div class="cat-card__num">03</div>
+        <div class="cat-card__visual">
+          <svg viewBox="0 0 100 100" class="cat-icon" aria-hidden="true">
+            <path d="M30 25 Q30 15 50 15 Q70 15 70 25 L80 35 L75 50 L75 85 L25 85 L25 50 L20 35 Z M40 25 Q40 20 50 20 Q60 20 60 25 L60 35 Q50 40 40 35 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Hoodies</h3>
+        <p>Calientitos y con onda. El abrigo perfecto para las noches cuencanas.</p>
+        <div class="cat-card__footer">
+          <span>Desde $35</span>
+          <svg viewBox="0 0 24 24" class="arrow"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="cat-card__bolt"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="catalog" id="catalogo">
+    <div class="section-head reveal">
+      <span class="eyebrow">⚡ Drops recientes</span>
+      <h2>Catálogo <em>en vivo</em>.</h2>
+      <p>Lo último que salió del taller. Stock limitado, hype ilimitado.</p>
+    </div>
+
+    <div class="catalog__filters reveal">
+      <button class="chip is-active" data-filter="all">Todo</button>
+      <button class="chip" data-filter="camisetas">Camisetas</button>
+      <button class="chip" data-filter="estuches">Estuches</button>
+      <button class="chip" data-filter="hoodies">Hoodies</button>
+    </div>
+
+    <div class="catalog__grid" id="catalogGrid">
+      <!-- Product cards generated by JS -->
+    </div>
+
+    <div class="catalog__cta reveal">
+      <p>¿Tienes una idea propia?</p>
+      <a href="#contacto" class="btn btn--primary">Pide tu diseño custom
+        <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ACERCA -->
+  <section class="about" id="acerca">
+    <div class="about__content reveal">
+      <span class="eyebrow">⚡ Acerca de</span>
+      <h2>Somos <em>SUGOI</em>.<br/>Diseño cuencano con voltaje.</h2>
+      <p class="lead">
+        Sugoi nació en las calles de Cuenca con una idea simple:
+        que cada prenda y cada accesorio cuente <strong>tu historia</strong>.
+        Mezclamos estética streetwear, cultura local y el rayo eléctrico
+        que nos representa para crear piezas únicas, hechas a mano y a tu medida.
+      </p>
+
+      <ul class="about__features">
+        <li>
+          <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          <div><strong>Hecho a mano</strong><span>Cada pieza pasa por nuestro taller en Cuenca.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          <div><strong>100% Personalizado</strong><span>Tu diseño, tu tela, tu vibe. Cero límites.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          <div><strong>Calidad premium</strong><span>Materiales seleccionados que aguantan el ritmo.</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about__visual reveal">
+      <div class="sticker sticker--1">PARA GENTE BACANA!</div>
+      <div class="sticker sticker--2">⚡ ONE WAY</div>
+      <div class="sticker sticker--3">MADE IN CUENCA</div>
+      <div class="about__circle">
+        <svg viewBox="0 0 24 24" class="bolt-mega" aria-hidden="true">
+          <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="contact__inner reveal">
+      <span class="eyebrow">⚡ Contacto</span>
+      <h2>Cuéntanos tu <em>idea</em>.</h2>
+      <p>Escríbenos por redes o llena el formulario. Respondemos rapidito.</p>
+
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm" novalidate>
+          <label>
+            <span>Nombre</span>
+            <input type="text" name="nombre" required placeholder="Tu nombre" />
+          </label>
+          <label>
+            <span>Email o WhatsApp</span>
+            <input type="text" name="contacto" required placeholder="tucorreo@ejemplo.com" />
+          </label>
+          <label>
+            <span>¿Qué quieres crear?</span>
+            <select name="linea">
+              <option>Camiseta</option>
+              <option>Estuche</option>
+              <option>Hoodie</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>
+            <span>Cuéntanos tu idea</span>
+            <textarea name="mensaje" rows="4" placeholder="Describe tu diseño, colores, referencias..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--block">
+            Enviar mensaje
+            <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          </button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+
+        <aside class="contact__side">
+          <h3>Síguenos</h3>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <span>Instagram</span><strong>@sugoist.of</strong>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <span>Facebook</span><strong>@sugoist.of</strong>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok">
+            <span>TikTok</span><strong>@sugoist.of</strong>
+          </a>
+          <a href="#" class="social-link" aria-label="Web">
+            <span>Web</span><strong>sugoist.com</strong>
+          </a>
+
+          <div class="contact__location">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+            <span>Cuenca, Ecuador</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        <span>SUGOI<span class="dot">.</span>st</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#acerca">Acerca</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__tag">Para gente bacana ⚡</p>
+    </div>
+    <div class="footer__base">
+      <span>© 2026 Sugoi Store · Made in Cuenca</span>
+      <span>Hecho con ⚡ por Vortta</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
