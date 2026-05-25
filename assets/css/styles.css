@@ -283,7 +283,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; col
   display: flex;
   gap: 28px;
   padding-top: 24px;
-  border-top: 2px dashed rgba(10,10,10,0.28);
+
   flex-wrap: wrap;
 }
 .hero__trust > div {
@@ -479,8 +479,11 @@ section.has-stickers { position: relative; overflow: hidden; }
 
 .categories {
   background: var(--blue);
-  border-top: 4px solid var(--ink);
   border-bottom: 4px solid var(--ink);
+  background-image: url(../img/dotted-bkg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .cat-grid {

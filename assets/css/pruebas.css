@@ -165,6 +165,10 @@
 .dropzone small { color: var(--muted); font-size: 12px; }
 .dropzone .btn { margin-top: 10px; }
 
+.btn{
+  font-size: 14px;
+}
+
 .uploads {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -208,9 +212,11 @@
   backdrop-filter: blur(8px);
   position: sticky;
   top: 90px;
+  margin-top: 10px;
 }
 
 .canvas__toolbar {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -557,7 +563,7 @@ input[type="range"]::-moz-range-thumb {
     grid-template-columns: 1fr;
     padding: 16px;
   }
-  .designer__canvas { position: static; }
+  .designer__canvas { margin-top: 10px; }
   .stage { max-width: 100%; }
   .color-grid { grid-template-columns: repeat(8, 1fr); }
 }
@@ -730,12 +736,14 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 8px 8px 0 var(--comic-ink) !important;
   backdrop-filter: none !important;
   position: sticky;
-  top: 90px;
+  top: 100px;
+  margin-top: 40px;
 }
 .designer__canvas::before {
   content: "⚡ STUDIO";
   position: absolute;
-  top: -18px;
+  display: block;
+  top: -12px;
   left: 20px;
   background: var(--yellow);
   color: var(--comic-ink);
@@ -765,6 +773,7 @@ input[type="range"]::-moz-range-thumb {
   border: 3px solid var(--comic-ink) !important;
   box-shadow: 3px 3px 0 var(--comic-ink);
   padding: 3px !important;
+  margin-top: 10px;
 }
 .view-btn {
   font-family: var(--font-comic, 'Bangers'), cursive;
