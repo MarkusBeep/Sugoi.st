@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseña tu prenda · SUGOI Store</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/pruebas.css" />
+</head>
+<body class="page-pruebas">
+
+  <div class="bg-layer">
+    <div class="grid-bg"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <header class="nav is-scrolled" id="nav">
+    <a href="index.html" class="nav__logo">
+      <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+      <span>SUGOI<span class="dot">.</span>st</span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#categorias">Categorías</a>
+      <a href="index.html#catalogo">Catálogo</a>
+      <a href="pruebas.html" class="is-active">Diseña ⚡</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a href="index.html#contacto" class="btn btn--sm">
+      Contacto
+    </a>
+  </header>
+
+  <section class="design-intro">
+    <span class="eyebrow">⚡ Diseño Personalizado</span>
+    <h1>Crea tu prenda <em>en vivo</em>.</h1>
+    <p>Sube tu diseño, ajústalo en la plantilla y mira cómo queda antes de pedirlo. Cotización automática al final.</p>
+  </section>
+
+  <div class="designer">
+
+    <aside class="designer__left">
+
+      <div class="panel">
+        <h3 class="panel__title">1. Producto</h3>
+        <div class="product-switch">
+          <button class="prod-btn is-active" data-product="camiseta">
+            <svg viewBox="0 0 100 100" class="prod-ico"><path d="M25 20 L40 15 L50 25 L60 15 L75 20 L80 35 L70 40 L70 85 L30 85 L30 40 L20 35 Z" fill="currentColor"/></svg>
+            <span>Camiseta</span>
+            <small>$15+</small>
+          </button>
+          <button class="prod-btn" data-product="hoodie">
+            <svg viewBox="0 0 100 100" class="prod-ico"><path d="M30 25 Q30 15 50 15 Q70 15 70 25 L80 35 L75 50 L75 85 L25 85 L25 50 L20 35 Z M40 25 Q40 20 50 20 Q60 20 60 25 L60 35 Q50 40 40 35 Z" fill="currentColor"/></svg>
+            <span>Hoodie</span>
+            <small>$35+</small>
+          </button>
+          <button class="prod-btn" data-product="estuche">
+            <svg viewBox="0 0 100 100" class="prod-ico"><rect x="30" y="10" width="40" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="80" r="3" fill="currentColor"/></svg>
+            <span>Estuche</span>
+            <small>$10+</small>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel__title">2. Color de la prenda</h3>
+        <div class="color-grid" id="colorGrid"></div>
+      </div>
+
+      <div class="panel" id="sizePanel">
+        <h3 class="panel__title">3. Talla</h3>
+        <div class="size-grid">
+          <button class="size-btn is-active" data-size="S">S</button>
+          <button class="size-btn" data-size="M">M</button>
+          <button class="size-btn" data-size="L">L</button>
+          <button class="size-btn" data-size="XL">XL</button>
+          <button class="size-btn" data-size="XXL">XXL <small>+$3</small></button>
+        </div>
+      </div>
+
+      <div class="panel" id="modelPanel">
+        <h3 class="panel__title">3. Modelo de celular</h3>
+        <select id="phoneModel" class="select">
+          <optgroup label="iPhone">
+            <option>iPhone 15 Pro Max</option>
+            <option>iPhone 15 Pro</option>
+            <option>iPhone 15</option>
+            <option>iPhone 14 Pro Max</option>
+            <option>iPhone 14 Pro</option>
+            <option>iPhone 14</option>
+            <option>iPhone 13</option>
+            <option>iPhone 12</option>
+            <option>iPhone 11</option>
+          </optgroup>
+          <optgroup label="Samsung">
+            <option>Galaxy S24 Ultra</option>
+            <option>Galaxy S24</option>
+            <option>Galaxy S23</option>
+            <option>Galaxy A54</option>
+            <option>Galaxy A34</option>
+          </optgroup>
+          <optgroup label="Xiaomi">
+            <option>Redmi Note 13</option>
+            <option>Redmi Note 12</option>
+            <option>Poco X6</option>
+          </optgroup>
+          <option>Otro modelo</option>
+        </select>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel__title">4. Sube tu diseño</h3>
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/png,image/jpeg,image/jpg,image/svg+xml" hidden />
+          <svg viewBox="0 0 24 24" class="dz-ico"><path d="M12 16V4m0 0-4 4m4-4 4 4M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p><strong>Arrastra tu diseño</strong></p>
+          <small>PNG, JPG o SVG · hasta 10MB</small>
+          <button class="btn btn--sm" type="button" id="browseBtn">Buscar archivo</button>
+        </div>
+        <div class="uploads" id="uploads"></div>
+      </div>
+    </aside>
+
+    <main class="designer__canvas">
+      <div class="canvas__toolbar">
+        <div class="view-switch" id="viewSwitch">
+          <button class="view-btn is-active" data-view="front">⚡ Frente</button>
+          <button class="view-btn" data-view="back">↺ Espalda</button>
+        </div>
+        <div class="canvas__hint" id="canvasHint">Sube y arrastra tu diseño al área punteada</div>
+        <button class="icon-btn" id="resetBtn" title="Reiniciar">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="stage" id="stage">
+
+        <canvas class="stage__canvas" id="stageCanvas"></canvas>
+
+        <div class="print-area" id="printArea"></div>
+
+        <div class="stage__foreground" id="stageForeground"></div>
+      </div>
+
+      <div class="canvas__legend">
+        <span class="legend-dot"></span>
+        Área imprimible · arrastra dentro del marco punteado
+      </div>
+    </main>
+
+    <aside class="designer__right">
+      <div class="panel">
+        <h3 class="panel__title">Ajustes del diseño</h3>
+
+        <div class="control" id="controlsWrap">
+          <label class="ctrl-row">
+            <span>Tamaño</span>
+            <input type="range" id="sizeRange" min="20" max="100" value="55" />
+            <em id="sizeVal">55%</em>
+          </label>
+          <label class="ctrl-row">
+            <span>Rotación</span>
+            <input type="range" id="rotRange" min="-180" max="180" value="0" />
+            <em id="rotVal">0°</em>
+          </label>
+          <label class="ctrl-row">
+            <span>Opacidad</span>
+            <input type="range" id="opacityRange" min="20" max="100" value="100" />
+            <em id="opacityVal">100%</em>
+          </label>
+          <div class="ctrl-grid">
+            <button class="mini-btn" id="centerBtn">⌖ Centrar</button>
+            <button class="mini-btn" id="flipBtn">⇋ Voltear</button>
+            <button class="mini-btn danger" id="deleteBtn">✕ Eliminar</button>
+          </div>
+        </div>
+
+        <p class="ctrl-empty" id="ctrlEmpty">Selecciona un diseño en el lienzo para editarlo.</p>
+      </div>
+
+      <div class="panel quote">
+        <h3 class="panel__title">⚡ Cotización en vivo</h3>
+
+        <ul class="quote__list" id="quoteList"></ul>
+
+        <div class="quote__total">
+          <span>Total estimado</span>
+          <strong id="quoteTotal">$0.00</strong>
+        </div>
+
+        <button class="btn btn--primary btn--block" id="requestQuoteBtn">
+          Solicitar por WhatsApp
+          <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        </button>
+        <small class="quote__note">El precio final puede variar según complejidad del diseño y disponibilidad de material.</small>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <svg viewBox="0 0 24 24" class="bolt-icon"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        <span>SUGOI<span class="dot">.</span>st</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#catalogo">Catálogo</a>
+        <a href="pruebas.html">Diseña</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <p class="footer__tag">Para gente bacana ⚡</p>
+    </div>
+    <div class="footer__base">
+      <span>© 2026 Sugoi Store · Made in Cuenca</span>
+      <span>+593 99 918 1782</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/pruebas.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+_mockups_raw/
+
+*.psd
+*.psb
+
+node_modules/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+*.log
